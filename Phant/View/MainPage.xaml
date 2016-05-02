@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Phant.MainPage">
+	<ContentPage.Content>
+		<StackLayout Padding="30">
+			<Button x:Name="Update" Clicked="OnClicked" WidthRequest="75" Text="Update Climate" TextColor="White" BackgroundColor="Blue" />
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Last Reading: " TextColor="Green" WidthRequest="140" />
+				<Label Text="{Binding Timestamp}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Relative humidity: " TextColor="Green" WidthRequest="140" />
+				<Label Text="{Binding Humidity}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Temperature (˚C): " TextColor="Green" WidthRequest="140" />
+				<Label Text="{Binding Tempc}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Temperature (˚F): " TextColor="Green" WidthRequest="140" />
+				<Label Text="{Binding Tempf}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Light level: " TextColor="Green" WidthRequest="140" />
+				<Label Text="{Binding Light}" />
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
